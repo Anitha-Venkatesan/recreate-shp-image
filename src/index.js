@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Header from "./Header";
+import ProductList from "./ProductList";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
     <Header/>
+    <ProductList/>
   </React.StrictMode>,
   document.getElementById('root')
 );
