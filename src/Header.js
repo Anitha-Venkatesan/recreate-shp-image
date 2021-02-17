@@ -1,4 +1,5 @@
 import React from "react";
+import "./Header.css";
 import hero from "./images/Hero.jpg";
 
 class Header extends React.Component {

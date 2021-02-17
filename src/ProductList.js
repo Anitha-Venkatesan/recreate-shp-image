@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProductList.css";
 import list1 from "./images/SW1371.jpg";
 import list2 from "./images/SW1113.jpg";
 import list3 from "./images/SWA051.jpg";
@@ -47,9 +48,9 @@ const products = [
 class ProductList extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className= "boxContainer">
         {products.map((product, index) => (
-          <div key={index} >
+          <div key={index} className="container">
             <img src={product.images} alt="productimages" />
             <div className="premium">{product.premium}</div>
             <div className="text">{product.text}</div>

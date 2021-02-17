@@ -2,17 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Header from "./Header";
-import Shopnow from "./ShopNow";
-import ProductList from "./ProductList";
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Header/>
-    <Shopnow/>
-    <ProductList/>
   </React.StrictMode>,
   document.getElementById('root')
 );
