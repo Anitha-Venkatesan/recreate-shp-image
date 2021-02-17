@@ -40,4 +40,13 @@
   height: 300px;
   width: 1440px;
 }
-
+.container {
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+}
+.buttonColor {
+  background-color: #d43e18;
+  color: white;
+  border: none;
+}
