@@ -69,4 +69,20 @@
   font-size: 9px;
   margin-bottom: 5px;
 }
+.shopnow {
+  background-color: #116B12;
+  font-stretch: expanded;
+  color: white;
+  border: none;
+  margin-top: 10px;
+}
+.name {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.shopnowContainer {
+  display: flex;
+  text-align: center;
+  font-size: 25px;
+}
 
