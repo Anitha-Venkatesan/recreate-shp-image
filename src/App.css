@@ -43,10 +43,30 @@
 .container {
   display: flex;
   text-align: center;
-  font-size: 15px;
+  font-size: 12px;
 }
 .buttonColor {
   background-color: #d43e18;
   color: white;
   border: none;
+  margin-top: 10px;
+
 }
+.text {
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+.quantity {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.price {
+  font-weight: bolder;
+  font-size: 14px;
+}
+.premium {
+  font-size: 9px;
+  margin-bottom: 5px;
+}
+
