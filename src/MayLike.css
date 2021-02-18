@@ -1,0 +1,21 @@
+.line-container {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  border: 1px solid #7DCA2D;
+  left: 15px;
+  right: 15px;
+  top: 50%;
+  z-index: -1;
+}
+
+.line-title {
+  display: inline;
+  color: #1B7D0E;
+  padding: 15px;
+  background-color: white;
+}
+ 
+ 

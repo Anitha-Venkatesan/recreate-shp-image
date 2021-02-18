@@ -2,6 +2,7 @@
 import './App.css';
 import Header from "./Header";
 import Shopnow from "./ShopNow";
+import MayLike from "./MayLike";
 import ProductList from "./ProductList";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <Shopnow />
+      <MayLike />
       <ProductList />
     </div>
   );

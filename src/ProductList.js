@@ -59,9 +59,9 @@ class ProductList extends React.Component {
         {products.map((product, index) => (
           <li className='list-item' key={index}>
             {product.bogo &&
-            <div className="bogoIcon">
-              <span>BOGO</span>
-            </div>}
+              <div className="bogoIcon">
+                <span>BOGO</span>
+              </div>}
             <div className='list-item-child'>
               <img src={product.image} alt={product.text} />
             </div>
