@@ -14,28 +14,32 @@ const products = [
     text: "Vitamin3 - Highest Potency",
     quantity: "5,000 IU 250 Sgels",
     premium:"Swanson Premium",
-    price: "$10.99"
+    price: "$10.99",
+    bogo: false
   },
   {
     image: list2,
     text: "Zinc Picolinate - Body Preferred Form",
     quantity: "22 mg 60 Caps",
     premium:"Swanson Premium",
-    price: "$2.59"
+    price: "$2.59",
+    bogo: false
   },
   {
     image: list3,
     text: "Dr.Stephen Langer's Ultimate 16 Strain Probiotic with FOS",
     quantity: "3.2 Billion CFU 60 Veg Drcaps",
     premium:"Swanson Probiotics",
-    price: "2 for $14.79"
+    price: "2 for $14.79",
+    bogo: true
 
   },
   {
     image: list4,
     text: "DELIVERY INSURANCE",
     premium:"Swanson Health Prodcuts, Inc.",
-    price: "$1.00"
+    price: "$1.00",
+    bogo: false,
 
   },
 
@@ -44,7 +48,8 @@ const products = [
     text: "Turmeric and Back Pepper",
     quantity: "60 Veg Caps",
     premium:"Swanson Premium",
-    price: "2 for $13.99"
+    price: "2 for $13.99",
+    bogo: true
   }
 ]
 class ProductList extends React.Component {
@@ -60,7 +65,7 @@ class ProductList extends React.Component {
             <div className='list-item-child premium'>{product.premium}</div>
             <div className='list-item-child text'>{product.text}</div>
             <div className='list-item-child quantity'>{product.quantity}</div>
-            <div className='list-item-child price'>{product.price}</div>
+            <div className={`list-item-child price ${product.bogo ? "bogo" : ""}`}>{product.price}</div>
             <div className='list-item-child'>
               <Button />
             </div>

@@ -28,26 +28,28 @@ const medicine = [
 class Shopnow extends React.Component {
   render() {
     return (
-      <div className="container">
+      <div className="shopContainer">
         <ul className='list'>
           {medicine.map((med, index) => (
             <li className='list-item' key={index}>
-              <div>
-              <div className='list-item-child'>
-                <img src={med.image} alt={med.text} />
-              </div>
-              <div>
-              <div className='list-item-child name'>{med.name}</div>
-              <div className='list-item-child description'>{med.description}</div>
-              <div className='list-item-child'>
-                <ShopNowButton />
-              </div>
-              </div>
+              <div className="row">
+                <div className='list-item-child column'>
+                  <img src={med.image} alt={med.text} />
+                </div>
+                <div className='list-item-child column'>
+                  <div className='list-item-child name column'>{med.name}</div>
+                  <div className="row">
+                    <div className='list-item-child description column'>{med.description}</div>
+                  </div>
+                  <div className="row">
+                    <ShopNowButton />
+                  </div>
+                </div>
               </div>
             </li>
           ))}
         </ul>
-     </div>
+      </div>
     )
   }
 }

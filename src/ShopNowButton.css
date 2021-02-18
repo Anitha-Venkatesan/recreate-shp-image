@@ -8,3 +8,6 @@
   border: none;
   cursor: pointer;
 }
+.column {
+  flex: 50%;
+}
