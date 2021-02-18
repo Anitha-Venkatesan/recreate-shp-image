@@ -3,6 +3,7 @@
   font-weight: 800;
   width: 150px;
   height: 35px;
-  color: white;
+  color: #fff;
   border: none;
+  cursor: pointer;
 }
