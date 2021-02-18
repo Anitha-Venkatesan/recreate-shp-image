@@ -9,41 +9,39 @@ const medicine = [
   {
     image: list1,
     name: "Healthy Joints, Digestion & More",
-
+    buttonName: "shop turmeric"
   },
   {
     image: list2,
     name: "Mighty Magnesium",
     description: "Essential mineral for healthy bones, heart & so much more",
-
+    buttonName: "shop now"
   },
   {
     image: list3,
     name: "Prebiotics & Probiotics",
     description: "A dynamic duo for gut health",
-
+    buttonName: "shop now"
   },
 
 ]
 class Shopnow extends React.Component {
   render() {
     return (
-      <div className="shopContainer">
-        <ul className='list'>
+      <div>
+        <ul className='list-shop'>
           {medicine.map((med, index) => (
-            <li className='list-item' key={index}>
-              <div className="row">
-                <div className='list-item-child column'>
-                  <img src={med.image} alt={med.text} />
+            <li className='list-item-shop' key={index}>
+              <div className='list-item-image'>
+                <img src={med.image} alt={med.text} />
+              </div>
+              <div className="list-item-text">
+                <div className='list-item-text-child'>
+                  <p>{med.name}</p>
+                  <div>{med.description}</div>
                 </div>
-                <div className='list-item-child column'>
-                  <div className='list-item-child name column'>{med.name}</div>
-                  <div className="row">
-                    <div className='list-item-child description column'>{med.description}</div>
-                  </div>
-                  <div className="row">
-                    <ShopNowButton />
-                  </div>
+                <div className='list-item-text-child'>
+                  <ShopNowButton value={med.buttonName} />
                 </div>
               </div>
             </li>

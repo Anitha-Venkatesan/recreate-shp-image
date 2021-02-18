@@ -4,7 +4,7 @@ import "./ShopNowButton.css";
 class Button extends React.Component {
   render() {
     return (
-        <button className="shopNowButtonColor column">shop now</button>
+        <button className="shopNowButtonColor column">{this.props.value}</button>
     )
   }
 }

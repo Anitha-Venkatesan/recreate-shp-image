@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductList.css";
+import Reviews from "./Reviews";
 import Button from "./Button";
 import list1 from "./images/SW1371.jpg";
 import list2 from "./images/SW1113.jpg";
@@ -15,7 +16,8 @@ const products = [
     quantity: "5,000 IU 250 Sgels",
     premium: "Swanson Premium",
     price: "$10.99",
-    bogo: false
+    bogo: false,
+    review: true
   },
   {
     image: list2,
@@ -23,7 +25,8 @@ const products = [
     quantity: "22 mg 60 Caps",
     premium: "Swanson Premium",
     price: "$2.59",
-    bogo: false
+    bogo: false,
+    review: true
   },
   {
     image: list3,
@@ -31,7 +34,8 @@ const products = [
     quantity: "3.2 Billion CFU 60 Veg Drcaps",
     premium: "Swanson Probiotics",
     price: "2 for $14.79",
-    bogo: true
+    bogo: true,
+    review: true
 
   },
   {
@@ -40,6 +44,7 @@ const products = [
     premium: "Swanson Health Prodcuts, Inc.",
     price: "$1.00",
     bogo: false,
+    review: true
 
   },
 
@@ -49,7 +54,8 @@ const products = [
     quantity: "60 Veg Caps",
     premium: "Swanson Premium",
     price: "2 for $13.99",
-    bogo: true
+    bogo: true,
+    review: true
   }
 ]
 class ProductList extends React.Component {
@@ -65,7 +71,7 @@ class ProductList extends React.Component {
             <div className='list-item-child'>
               <img src={product.image} alt={product.text} />
             </div>
-            <div className='list-item-child'>Reviews section</div>
+            < Reviews value ={product.review} />
             <div className='list-item-child premium'>{product.premium}</div>
             <div className='list-item-child text'>{product.text}</div>
             <div className='list-item-child quantity'>{product.quantity}</div>

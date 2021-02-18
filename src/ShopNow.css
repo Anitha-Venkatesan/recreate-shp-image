@@ -1,32 +1,24 @@
-.row {
-  display: flex;
-}
-.column {
-  flex: 30%;
-}
-.shopContainer {
+.list-shop {
   display: flex;
   flex-wrap: wrap;
-}
-.list {
-  margin: auto;
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
 }
 
-.list .list-item {
-  padding: 5px;
-  flex: 0 0 100%;
+.list-item-shop {
+  flex-grow: 1;
+  display: flex;
+}
+
+.list-item-image img {
+  width: 150px;
+}
+
+.list-item-text {
   display: flex;
   flex-direction: column;
-  height: 500px;
 }
-.list .list-item .list-item-child .column{
+
+.list-item-text-child {
+  text-align: left;
   flex-grow: 1;
-}
-.name {
-  font-weight: 700;
-  
 }
