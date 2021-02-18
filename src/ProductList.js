@@ -13,7 +13,7 @@ const products = [
     image: list1,
     text: "Vitamin3 - Highest Potency",
     quantity: "5,000 IU 250 Sgels",
-    premium:"Swanson Premium",
+    premium: "Swanson Premium",
     price: "$10.99",
     bogo: false
   },
@@ -21,7 +21,7 @@ const products = [
     image: list2,
     text: "Zinc Picolinate - Body Preferred Form",
     quantity: "22 mg 60 Caps",
-    premium:"Swanson Premium",
+    premium: "Swanson Premium",
     price: "$2.59",
     bogo: false
   },
@@ -29,7 +29,7 @@ const products = [
     image: list3,
     text: "Dr.Stephen Langer's Ultimate 16 Strain Probiotic with FOS",
     quantity: "3.2 Billion CFU 60 Veg Drcaps",
-    premium:"Swanson Probiotics",
+    premium: "Swanson Probiotics",
     price: "2 for $14.79",
     bogo: true
 
@@ -37,7 +37,7 @@ const products = [
   {
     image: list4,
     text: "DELIVERY INSURANCE",
-    premium:"Swanson Health Prodcuts, Inc.",
+    premium: "Swanson Health Prodcuts, Inc.",
     price: "$1.00",
     bogo: false,
 
@@ -47,7 +47,7 @@ const products = [
     image: list5,
     text: "Turmeric and Back Pepper",
     quantity: "60 Veg Caps",
-    premium:"Swanson Premium",
+    premium: "Swanson Premium",
     price: "2 for $13.99",
     bogo: true
   }
@@ -58,6 +58,10 @@ class ProductList extends React.Component {
       <ul className='list'>
         {products.map((product, index) => (
           <li className='list-item' key={index}>
+            {product.bogo &&
+            <div className="bogoIcon">
+              <span>BOGO</span>
+            </div>}
             <div className='list-item-child'>
               <img src={product.image} alt={product.text} />
             </div>

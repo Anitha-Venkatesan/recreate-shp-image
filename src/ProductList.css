@@ -18,6 +18,24 @@
   display: flex;
   flex-direction: column;
   height: 500px;
+  position: relative;
+}
+.list .list-item .bogoIcon {
+  position: absolute;
+  writing-mode: vertical-rl;
+  height: 80px;
+  width: 25px;
+  font-size: 14px;
+  background-color:#dfecb7;
+  top: 5px;
+  right: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.list .list-item .bogoIcon span {
+  position: absolute;
+  top: 20px;
+  left: 5px;
 }
 
 .list .list-item .list-item-child {
