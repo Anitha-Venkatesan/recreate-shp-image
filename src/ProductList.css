@@ -1,17 +1,30 @@
-.boxContainer{
+.main {
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
+  padding: 5px;
 }
 .container {
+  display: flex;
   flex-direction: column;
   font-size: 12px;
+  width: 250px;
 }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+.info .info-image {
+  width: 200px;
+  height: 200px;
+}
+
 .text {
-  margin-bottom: 20px;
   font-weight: bolder;
 }
 .quantity {
-  margin-bottom: 30px;
   font-weight: 500;
   font-size: 12px;
 }
@@ -21,12 +34,10 @@
 }
 .premium {
   font-size: 10px;
-  margin-bottom: 5px;
-}
-.buttonColor {
-  background-color: #d43e18;
-  color: white;
-  border: none;
-  margin-top: 10px;
 
+}
+
+
+.cartContainer {
+  
 }

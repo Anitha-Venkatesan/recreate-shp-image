@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProductList.css";
+import Button from "./Button";
 import list1 from "./images/SW1371.jpg";
 import list2 from "./images/SW1113.jpg";
 import list3 from "./images/SWA051.jpg";
@@ -32,8 +33,9 @@ const products = [
   },
   {
     images: list4,
-    text: "Delivery Insurance",
+    text: "DELIVERY INSURANCE",
     premium:"Swanson Health Prodcuts, Inc.",
+    price: "$1.00"
 
   },
 
@@ -48,15 +50,19 @@ const products = [
 class ProductList extends React.Component {
   render() {
     return (
-      <div className= "boxContainer">
+      <div className= "main">
         {products.map((product, index) => (
           <div key={index} className="container">
-            <img src={product.images} alt="productimages" />
-            <div className="premium">{product.premium}</div>
-            <div className="text">{product.text}</div>
+            <div className="info">
+              <img className='info-image' src={product.images} alt="productimages" />
+              <div className="premium">{product.premium}</div>
+              <div className="text">{product.text}</div>
+            </div>
+            <div className= "cartContainer">
             <div className="quantity">{product.quantity}</div>
             <div className="price">{product.price}</div>
-            <button className="buttonColor">Add to cart</button>
+            <Button />
+            </div>
           </div>
         )
         )}
