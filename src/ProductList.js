@@ -17,6 +17,8 @@ const products = [
     premium: "Swanson Premium",
     price: "$10.99",
     bogo: false,
+    maxstar: 5,
+    star: 5,
     reviewCount: 440
   },
   {
@@ -26,6 +28,8 @@ const products = [
     premium: "Swanson Premium",
     price: "$2.59",
     bogo: false,
+    maxstar: 5,
+    star: 5,
     reviewCount: 95
   },
   {
@@ -35,6 +39,8 @@ const products = [
     premium: "Swanson Probiotics",
     price: "2 for $14.79",
     bogo: true,
+    maxstar: 5,
+    star: 5,
     reviewCount: 823
 
   },
@@ -44,6 +50,8 @@ const products = [
     premium: "Swanson Health Prodcuts, Inc.",
     price: "$1.00",
     bogo: false,
+    maxstar: 5,
+    star: 5,
     reviewCount: 78
 
   },
@@ -55,6 +63,8 @@ const products = [
     premium: "Swanson Premium",
     price: "2 for $13.99",
     bogo: true,
+    maxstar: 5,
+    star: 5,
     reviewCount: 238
   }
 ]
@@ -71,13 +81,8 @@ class ProductList extends React.Component {
             <div className='list-item-child'>
               <img src={product.image} alt={product.text} />
             </div>
-            <div className='list-item-child class="fa fa-star"'>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="count-style">{product.reviewCount}</span>
+            <div className='list-item-child'> 
+            <Reviews maxstar= {product.maxstar} star= {product.maxstar} value={product.reviewCount} />
             </div>
             <div className='list-item-child premium'>{product.premium}</div>
             <div className='list-item-child text'>{product.text}</div>
