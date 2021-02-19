@@ -2,11 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  padding: 0;
 }
 
 .list-item-shop {
-  flex-grow: 1;
   display: flex;
+  flex: 0 0 100%;
+  background-color: #dfe0e047;
 }
 
 .list-item-image img {
@@ -21,4 +23,26 @@
 .list-item-text-child {
   text-align: left;
   flex-grow: 1;
+  
+}
+.name-style {
+  font-weight: 700;
+  font-size: 20px;
+  color:#4a4a4a;
+  line-height:1.5;
+  margin:0;
+  padding:0;
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .list-item-shop {
+    flex: 0 0 45%;
+  }
+}
+/*Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .list-item-shop {
+    flex: 0 0 33%;
+  }
 }

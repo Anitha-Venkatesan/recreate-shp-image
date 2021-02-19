@@ -1,24 +1,24 @@
 import React from "react";
 import "./ShopNow.css";
 import ShopNowButton from "./ShopNowButton.js";
-import list1 from "./images/SW1371.jpg";
-import list2 from "./images/SW1113.jpg";
-import list3 from "./images/SWA051.jpg";
+import image1 from "./images/SWT2.png";
+import image2 from "./images/SWT3.png";
+import image3 from "./images/SWT1.png";
 
 const medicine = [
   {
-    image: list1,
+    image: image1,
     name: "Healthy Joints, Digestion & More",
     buttonName: "shop turmeric"
   },
   {
-    image: list2,
+    image: image2,
     name: "Mighty Magnesium",
     description: "Essential mineral for healthy bones, heart & so much more",
     buttonName: "shop now"
   },
   {
-    image: list3,
+    image: image3,
     name: "Prebiotics & Probiotics",
     description: "A dynamic duo for gut health",
     buttonName: "shop now"
@@ -37,7 +37,7 @@ class Shopnow extends React.Component {
               </div>
               <div className="list-item-text">
                 <div className='list-item-text-child'>
-                  <p>{med.name}</p>
+                  <p className="name-style">{med.name}</p>
                   <div>{med.description}</div>
                 </div>
                 <div className='list-item-text-child'>
