@@ -40,7 +40,7 @@ const products = [
     price: "2 for $14.79",
     bogo: true,
     maxstar: 5,
-    star: 5,
+    star: 4,
     reviewCount: 823
 
   },
@@ -51,7 +51,7 @@ const products = [
     price: "$1.00",
     bogo: false,
     maxstar: 5,
-    star: 5,
+    star: 4,
     reviewCount: 78
 
   },
@@ -64,7 +64,7 @@ const products = [
     price: "2 for $13.99",
     bogo: true,
     maxstar: 5,
-    star: 5,
+    star: 3,
     reviewCount: 238
   }
 ]
@@ -82,7 +82,7 @@ class ProductList extends React.Component {
               <img src={product.image} alt={product.text} />
             </div>
             <div className='list-item-child'> 
-            <Reviews maxstar= {product.maxstar} star= {product.maxstar} value={product.reviewCount} />
+            <Reviews maxstar= {product.maxstar} star= {product.star} value={product.reviewCount} />
             </div>
             <div className='list-item-child premium'>{product.premium}</div>
             <div className='list-item-child text'>{product.text}</div>
