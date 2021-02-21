@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import Offers from "./Offers";
+import  ActivateButtom from "./ActivateButton";
 
 
 const offers = [
@@ -12,12 +13,12 @@ const offers = [
   {
   offerAmt: 10,
   offerText: "OFF",
-  offerLimit: "ORDERS $100+"
+  offerLimit: "ORDERS $60+"
   },
   {
   offerAmt: 5,
   offerText: "OFF",
-  offerLimit: "ORDERS $100+"
+  offerLimit: "ORDERS $45+"
   }
 ]
 
@@ -26,11 +27,12 @@ class Header extends React.Component {
     return (
       <div>
         <h1>Build a Basket & Save</h1>
+        <ul className="offer-content">
         {offers.map((offer) => (
           < Offers offerAmt={offer.offerAmt} offerText={offer.offerText} offerLimit={offer.offerLimit}/>
-
         ))}
-        
+        </ul>
+        <ActivateButtom />
       </div>
     )
   }

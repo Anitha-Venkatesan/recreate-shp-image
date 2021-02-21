@@ -1,0 +1,15 @@
+.activate-button {
+  background-color: #009a00;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  width: 230px;
+  height: 35px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  letter-spacing: 3px;
+}
+
+
