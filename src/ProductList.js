@@ -78,14 +78,16 @@ class ProductList extends React.Component {
               <div className="bogoIcon">
                 <span>BOGO</span>
               </div>}
-            <div className='list-item-child'>
+            <div className='product-image'>
               <img src={product.image} alt={product.text} />
             </div>
-            <div className='list-item-child'> 
+            <div className='list-item-child rating-star'> 
             <Reviews maxstar= {product.maxstar} star= {product.star} value={product.reviewCount} />
             </div>
-            <div className='list-item-child premium'>{product.premium}</div>
-            <div className='list-item-child text'>{product.text}</div>
+            <div className='list-item-child product-info'>
+              <div className="premium">{product.premium}</div>
+              <div className="product-name">{product.text}</div>
+            </div>
             <div className='list-item-child quantity'>{product.quantity}</div>
             <div className={`list-item-child price ${product.bogo ? "bogo" : ""}`}>{product.price}</div>
             <div className='list-item-child'>

@@ -12,14 +12,12 @@ class Reviews extends React.Component {
         maxStarArr.push("fa fa-star unchecked"); 
       }
     }
-         
-    console.log(maxStarArr);
     return (
-      <div className='list-item-child'>
+      <>
         {maxStarArr.map((maxstar, index) => (
           <span key={index} className={maxstar}></span>))}
         <span className="count-style">{this.props.value}</span>
-      </div>
+      </>
     );
   }
 }

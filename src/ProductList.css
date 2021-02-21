@@ -37,34 +37,42 @@
   top: 20px;
   left: 5px;
 }
-
-.list .list-item .list-item-child {
-  flex-grow: 1;
+.product-image{
+  margin-bottom: 18px;
 }
-
-.text {
+.rating-star {
+  height: 20px;
+  margin-bottom: 18px;
+}
+.product-info {
+  margin-bottom: 15px;
+  height: 60px;
+}
+.product-info .product-name {
   font-weight: 700;
-  padding-bottom: 15px;
+}
+.product-info .premium {
+  font-size: 10px;
+  margin-bottom: 8px;
 }
 
 .quantity {
   font-weight: 500;
   font-size: 12px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  height: 20px;
 }
 
 .price {
   font-weight: 700;
   font-size: 14px;
-  padding-bottom: 10px;
+  margin-bottom: 15px;
+  height: 20px;
 }
 .bogo {
   color:crimson;
 }
 
-.premium {
-  font-size: 10px;
-}
  .count-style{
     width: 50%;
     font-size: 12px;

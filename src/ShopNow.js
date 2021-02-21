@@ -1,15 +1,16 @@
 import React from "react";
 import "./ShopNow.css";
 import ShopNowButton from "./ShopNowButton.js";
-import image1 from "./images/SWT2.png";
-import image2 from "./images/SWT3.png";
-import image3 from "./images/SWT1.png";
+import image1 from "./images/turmeric.png";
+import image2 from "./images/magnesium.png";
+import image3 from "./images/probiotic.png";
 
 const medicine = [
   {
     image: image1,
     name: "Healthy Joints, Digestion & More",
-    buttonName: "shop turmeric"
+    buttonName: "shop turmeric",
+    turmeric: true
   },
   {
     image: image2,
@@ -23,7 +24,6 @@ const medicine = [
     description: "A dynamic duo for gut health",
     buttonName: "shop now"
   },
-
 ]
 class Shopnow extends React.Component {
   render() {
@@ -32,15 +32,15 @@ class Shopnow extends React.Component {
         <ul className='list-shop'>
           {medicine.map((med, index) => (
             <li className='list-item-shop' key={index}>
-              <div className='list-item-image'>
+              <div className={med.turmeric ? 'list-item-image turmeric' : 'list-item-image' }>
                 <img src={med.image} alt={med.text} />
               </div>
               <div className="list-item-text">
-                <div className='list-item-text-child'>
-                  <p className="name-style">{med.name}</p>
-                  <div>{med.description}</div>
+                <div className={med.turmeric ? 'list-item-text-child turmeric' : 'list-item-text-child' }>
+                    <span className="name-style">{med.name}</span>
+                     {med.description &&<div>{med.description}</div>}
                 </div>
-                <div className='list-item-text-child'>
+                <div>
                   <ShopNowButton value={med.buttonName} />
                 </div>
               </div>
