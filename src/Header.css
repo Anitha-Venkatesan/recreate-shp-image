@@ -2,3 +2,10 @@
   height: 300px;
   width: 100%;
 }
+h1 {
+  font-size: 40px;
+  /*text-align: center;
+  color: green;
+  font-stretch: 20px;*/
+}
+
