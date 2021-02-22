@@ -2,6 +2,7 @@ import React from "react";
 import "./Header.css";
 import Offers from "./Offers";
 import  ActivateButtom from "./ActivateButton";
+import Cart from "./Cart";
 
 
 const offers = [
@@ -25,14 +26,19 @@ const offers = [
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div className="banner">
         <h1>Build a Basket & Save</h1>
         <ul className="offer-content">
-        {offers.map((offer) => (
-          < Offers offerAmt={offer.offerAmt} offerText={offer.offerText} offerLimit={offer.offerLimit}/>
+        {offers.map((offer, index) => (
+          <Offers 
+            key={index}
+            offerAmt={offer.offerAmt} 
+            offerText={offer.offerText} 
+            offerLimit={offer.offerLimit}/>
         ))}
         </ul>
         <ActivateButtom />
+        <Cart />
       </div>
     )
   }

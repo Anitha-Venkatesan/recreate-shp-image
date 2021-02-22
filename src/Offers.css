@@ -1,33 +1,20 @@
-.offer-content { 
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-
-}
 .offers-box {
   border-right: 2px solid green;
   height: 50px;
   margin-bottom : 10px;
-
-  
 }
+
 .offers {
   display: flex;
+  flex: 1;
+  align-content: space-around;
   color : #004e00;
   
 }
 .offers .dollar-offer {
-  display: flex;
-  max-height:60px;
-  font-size: 50px;
+  font-size: 100px;
 }
-.offers .max-amount-offer {
-  display: flex;
-  flex-direction: column;
-  max-height:60px;
-  margin-top: 7px;
-  
-}
+
 .max-amount-offer .offer-size{
   font-size: 25px;
 }

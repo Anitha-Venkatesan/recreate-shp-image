@@ -2,11 +2,22 @@
   height: 300px;
   width: 100%;
 }
-h1 {
-  font-size: 40px;
-  font-weight: 700;
-  text-align: center;
-  font-stretch:extra-expanded;
-  color: #009a00;
+
+.banner {
+  width: 50%;
+  margin: 0 auto;
 }
 
+.banner h1 {
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  color: #009a00;
+  letter-spacing: 1.5px;
+}
+
+.offer-content { 
+  display: flex;
+  list-style-type: none;
+  padding: 0
+}

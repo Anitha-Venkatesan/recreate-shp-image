@@ -1,3 +1,8 @@
+.activate-button-align {
+  display: flex;
+  align-items: center;
+
+}
 .activate-button {
   background-color: #009a00;
   font-weight: 800;
