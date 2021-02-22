@@ -1,12 +1,12 @@
 import React from "react";
 import "./ProductList.css";
-import Reviews from "./Reviews";
-import Button from "./Button";
-import list1 from "./images/SW1371.jpg";
-import list2 from "./images/SW1113.jpg";
-import list3 from "./images/SWA051.jpg";
-import list4 from "./images/DELIVERYINS01.jpg";
-import list5 from "./images/SW1613.jpg";
+import Reviews from "../Reviews/Reviews";
+import Button from "../Button/Button";
+import list1 from "../../images/SW1371.jpg";
+import list2 from "../../images/SW1113.jpg";
+import list3 from "../../images/SWA051.jpg";
+import list4 from "../../images/DELIVERYINS01.jpg";
+import list5 from "../../images/SW1613.jpg";
 
 
 const products = [
@@ -81,8 +81,8 @@ class ProductList extends React.Component {
             <div className='product-image'>
               <img src={product.image} alt={product.text} />
             </div>
-            <div className='list-item-child rating-star'> 
-            <Reviews maxstar= {product.maxstar} star= {product.star} value={product.reviewCount} />
+            <div className='list-item-child rating-star'>
+              <Reviews maxstar={product.maxstar} star={product.star} value={product.reviewCount} />
             </div>
             <div className='list-item-child product-info'>
               <div className="premium">{product.premium}</div>

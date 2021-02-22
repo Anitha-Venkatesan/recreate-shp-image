@@ -1,9 +1,9 @@
 
 import './App.css';
-import Header from "./Header";
-import Shopnow from "./ShopNow";
-import MayLike from "./MayLike";
-import ProductList from "./ProductList";
+import Header from "./Components/Header/Header";
+import Shopnow from "./Components/ShopNow/ShopNow";
+import MayLike from "./Components/MayLike/MayLike";
+import ProductList from "./Components/ProductList/ProductList";
 
 function App() {
   return (
@@ -15,5 +15,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

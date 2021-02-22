@@ -1,9 +1,9 @@
 import React from "react";
 import "./ShopNow.css";
-import ShopNowButton from "./ShopNowButton.js";
-import image1 from "./images/turmeric.png";
-import image2 from "./images/magnesium.png";
-import image3 from "./images/probiotic.png";
+import ShopNowButton from "../ShopNowButton/ShopNowButton";
+import image1 from "../../images/turmeric.png";
+import image2 from "../../images/magnesium.png";
+import image3 from "../../images/probiotic.png";
 
 const medicine = [
   {
