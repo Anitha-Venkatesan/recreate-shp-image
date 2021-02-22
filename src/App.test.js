@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react';
 import App from './App';
+import { shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('App.js', () => {
+
+  it('should render header', () => {
+    const wrapper = shallow(<App />);
+    const element = toJson(wrapper);
+    expect(element.type).toEqual('div');
+  });
 });
+
